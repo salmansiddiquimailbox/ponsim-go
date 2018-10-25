@@ -15,3 +15,9 @@ func (s* Server) ReenableOlt(ctx context.Context, empty *pb.Empty) (*pb.Empty, e
 }
 //TODO Implement All Services
 
+func (s* Server) ActivateOnu(ctx context.Context, empty *pb.Empty) (*pb.Empty, error) {
+	log.Println("Info: ActivateOnu() called")
+	//TODO
+}
+//TODO Implement All RPC
+
