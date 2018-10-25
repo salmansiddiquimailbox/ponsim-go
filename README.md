@@ -1,2 +1,2 @@
 # ponsim-go
-PON Simulator written in golang
+PON Simulator written in golang for openolt
