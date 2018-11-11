@@ -5,7 +5,7 @@ import (
 	"net"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
-	"google.golang.org"
+	"google.golang.org/grpc/reflection"
 	"sync"
 	pb "openolt"
 )
@@ -19,7 +19,7 @@ func StartGRPCServer(){
 	log.Println("GRPC Server")
 	lis,err:=net.Listen("tcp",port)
 	if err!=nil{
-		log.Fatalf("Unable to listen to this IP and Port\nProbably the port is already in use")
+		log.Fatalf("Erro: %v",err)
 	}
 
 	s := grpc.NewServer()
